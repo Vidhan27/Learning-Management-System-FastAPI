@@ -3,10 +3,10 @@ from sqlalchemy.ext.asyncio import create_async_engine , AsyncSession
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://postgres:vidhan27@localhost:5432/jay"
+SQLALCHEMY_DATABASE_URL = "postgres://default:Y2ATrXkalL1G@ep-aged-wildflower-a44v6mua.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 
 
-ASYNC_SQLALCHEMY_DATABASE_URL = "postgresql+asyncpg://postgres:vidhan27@localhost:5432/jay"
+ASYNC_SQLALCHEMY_DATABASE_URL = "postgres://default:Y2ATrXkalL1G@ep-aged-wildflower-a44v6mua.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 
 # asyncpg is fast async driver from postgres
 
