@@ -1,12 +1,13 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.ext.asyncio import create_async_engine , AsyncSession
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = POSTGRE_NORMAL
+SQLALCHEMY_DATABASE_URL = os.getenv('POSTGRE_NORMAL')
 
 
-ASYNC_SQLALCHEMY_DATABASE_URL = POSTGRE_ASYNC
+ASYNC_SQLALCHEMY_DATABASE_URL = os.getenv('POSTGRE_ASYNC')
 
 # asyncpg is fast async driver from postgres
 
